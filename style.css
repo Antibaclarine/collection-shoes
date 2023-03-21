@@ -418,7 +418,7 @@ list-style: none;
     border-radius: 5px;
     padding: 2%;
 }
-    /* width: min(90%,70.5rem); */
+    
     @media (max-width: 768px){
         body{
             overflow-x: hidden;
@@ -437,20 +437,21 @@ list-style: none;
     .the{
         
         font-size: 3vw;
-margin-left: 35%;
+margin-left: 95%;
 
     }
     .Home1{
         width: 150%;
         font-size: 1.1vw;
-        margin-right: 100%;
+        position: relative;
+        right: -150px;
     }
     .Home1ul li{
         
     }
     .morbi{
         font-size: 1vw;
-        margin-left: 35%;
+        margin-left: 75%;
     }
     .how{
         margin-left: 35%;
@@ -504,6 +505,9 @@ margin-left: 35%;
         left: 70%;
         bottom: 40%;
     }
+    .Home{
+        margin-left: 50%;
+    }
     .nike{
         position: relative;
         left: 52%;
@@ -553,6 +557,7 @@ width: 50%;
     .under{
         margin-right: 55%;
     }
+    .shoes1{width: 100%;}
     
     }
 
@@ -600,13 +605,54 @@ width: 50%;
 .about{font-size: 1.5vw;}
 .about1{font-size: 1.5vw;}
 }
-@media screen {
-    /* .Home{margin-left:180% ;} */
-    /* .the{margin-left: 190%; position: relative; top: 3%;} */
-    /* .morbi{margin-left: 170%;} */
-/* .how{margin-left: 190%;} */
-/* .shoes{margin-left: 20%;} */
+@media only screen and (max-width:800px){
+    .Home{position: relative;left: -170px;}
+    .the{position: relative;left: -240px;font-size: 5vw;}
+    .morbi{position: relative;left: -280px;font-size: 2vw;}
+.how{position: relative;left: -280px;}
+.shoes{width: 90px;}
+
+.about1{position: relative;left: 
+    -45%;};
+.best{display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 2rem;
 }
+.fur{position: relative;left: -10%;width: 120%;}
+.shoes1{width: 50%; margin-right: ;}
+.paragraph{font-size: 2vw;
+}
+.get{height: 100px;}
+.about{
+    background-color: crimson;
+    width: 70%;
+    height: 200px;
+    font-size: 2vw;
+}
+}
+@media only screen and (max-width:280px){
+    .the{position: relative;left:   -190px ;}
+    .morbi{position: relative;left:  -190px}
+    .how{position: relative;left: -190px;}
+    .Home{position: relative;left: -120px;}
+    .best{display: grid;grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;}
+    #view1{
+width: 80%;
+position: relative;
+top: -15px;
+    }
+    #view2{width: 90%;position: relative;top: -15px; left: 75%;}
+.shoes1{width: 70%; }
+.login{position: relative;left: -30px;}
+.shoes2{width: 70%;}
+.shoes3{width: 70%;}
+#puma{position: relative;left: 70%;top: -25px; font-size: 1.8vw;}
+ .nike{position: relative;left: 90%;top: -25px; font-size: 1.8vw;}
+ .adidas{position: relative;left: 70%;top: -35px;font-size: 1.8vw;} 
+ .fur{display: grid;grid-template-columns: 5 ,1fr;grid-gap: 0rem;max-width: 250%;min-width:80% ;}  
+}
+
 
 
 
