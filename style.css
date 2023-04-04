@@ -18,11 +18,22 @@ background-color: lightgrey;
     /* height: 800px; */
 }
 .Home{
-font-size: 1.1vw;
+    
+
+    
+    
+font-size: 1.5vw;
+display: flex;
+justify-content: space-between;
+
+
 }
 .login{
+    display: flex;
+    justify-content: space-between;
     margin-left: 50%;
-    font-size: 1.1vw;
+    font-size: 1.5vw;
+
     
 }
 .shoes{
@@ -106,7 +117,7 @@ bottom: 5%;
 }
 .women{
     display: grid;
-    grid-template-columns: repeat(4 ,1fr);
+    grid-template-columns: repeat(4,1fr);
     font-size: 1.1vw;
 }
 .new{
@@ -133,6 +144,7 @@ bottom: 5%;
   display: grid; 
   grid-template-columns: repeat(5 ,1fr); 
   background-color: crimson;
+  color: white;
   position: relative;
   top: 40px;
 
@@ -269,10 +281,16 @@ margin-right: 20%;
 margin-left: 50%;
 }
 .about1 ul li{
-    
-display: inline-block;
+  display: inline-block; 
+justify-content: space-between;
+flex-direction: row;
+padding: 0px 6px 4px 8px;
 }
 .about{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
     background-color: crimson;
     width: 70%;
     height: 300px;
@@ -354,6 +372,7 @@ left: 30%;
     display: grid;
     grid-template-columns: repeat(5 ,1fr);
     background-color: crimson;
+    color: white;
     font-size: 1.1vw;
 }
 .foot2 ul li{
@@ -414,12 +433,18 @@ list-style: none;
 }
 .how{
     background-color: crimson;
+
     color: white;
     border-radius: 5px;
     padding: 2%;
+    
+}
+.last{
+    background-color: crimson;
+    color: white;
 }
     
-    @media (max-width: 768px){
+    @media screen and (max-width: 768px){
         body{
             overflow-x: hidden;
             overflow-y: scroll;
@@ -428,16 +453,19 @@ list-style: none;
     
         .con1{
         display: grid;
-        grid-template-columns: repeat(2 ,1fr);
+        grid-template-columns: repeat( 1fr);
         justify-content: center;
         grid-gap: 0.1rem;
         
         
     }
+    .con{
+        margin: auto;
+    }
     .the{
         
         font-size: 3vw;
-margin-left: 95%;
+margin-left: 105%;
 
     }
     .Home1{
@@ -450,20 +478,24 @@ margin-left: 95%;
         
     }
     .morbi{
-        font-size: 1vw;
-        margin-left: 75%;
+        font-size: 1.8vw;
+        margin-left: 95%;
     }
     .how{
         margin-left: 35%;
     }
     .best{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: 1fr;
         justify-content: center;
         margin-right: 30%;
     }
     .fur{
-        margin-right: 30%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-right: 10%;
+        max-width: 80%;
+        margin-top: 5%;
     }
     .new{
         margin-right: 30%;
@@ -474,10 +506,14 @@ margin-left: 95%;
         font-size: 1vw;
     }
     .women{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
         margin-right: 30%;
         font-size: 1vw;
     }
     .mens{
+        display:grid ;
+        grid-template-columns: repeat(2,1fr);
         margin-right: 30%;
         font-size: 1vw;
     }
@@ -506,7 +542,11 @@ margin-left: 95%;
         bottom: 40%;
     }
     .Home{
+        
         margin-left: 50%;
+        display: flex;
+        flex-direction: column;
+        
     }
     .nike{
         position: relative;
@@ -524,6 +564,7 @@ margin-left: 95%;
         margin-right: 25%;
     }
     .about1{
+        
         margin-right: 75%;
     }
     .products{
@@ -534,10 +575,14 @@ margin-left: 95%;
         margin-right: 25%;
     }
     .foot{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
         width: 80%;
     }
     .login{
         margin-left: 60%;
+        display: flex;
+        flex-direction: column;
     }
     .shoes22{
 width: 50%;
@@ -558,18 +603,19 @@ width: 50%;
         margin-right: 55%;
     }
     .shoes1{width: 100%;}
+    .about{}
     
-    }
+    } 
 
 
 
-@media (max-width: 600px) {
+ @media (max-width: 600px) { 
     body{
         overflow-x: hidden;
         overflow-y: scroll;
         width: 100%;
     }
-    .Home{margin-left:90%; width: 140%;}
+    .Home{margin-left:90%; width: 140%;} */
     .the{margin-left: 90%;}
     .morbi{margin-left: 75%;
     width: 70%;
@@ -590,9 +636,9 @@ width: 50%;
 .shoes16{
     position: relative;
     top: -15px;
-}
-
-}
+} 
+ } 
+ 
 @media (max-width:550px) {
    .Home{margin-left: 100%;}
 .the{margin-left: 134%;}
@@ -601,15 +647,15 @@ width: 50%;
 .about1{width: 100%; margin-right: 15%;}
 .view1{height: 1px;}
 .signu{width: 60%; font-size: 1.1vw;}
-.signup2{font-size: 1.1vw;}
+.signup2{font-size: 1.1vw;} 
 .about{font-size: 1.5vw;}
 .about1{font-size: 1.5vw;}
-}
+} 
 @media only screen and (max-width:800px){
     .Home{position: relative;left: -170px;}
     .the{position: relative;left: -240px;font-size: 5vw;}
     .morbi{position: relative;left: -280px;font-size: 2vw;}
-.how{position: relative;left: -280px;}
+.how{position: relative;left: -280px;} 
 .shoes{width: 90px;}
 
 .about1{position: relative;left: 
@@ -643,7 +689,7 @@ position: relative;
 top: -15px;
     }
     #view2{width: 90%;position: relative;top: -15px; left: 75%;}
-.shoes1{width: 70%; }
+.shoes1{width: 70%; } 
 .login{position: relative;left: -30px;}
 .shoes2{width: 70%;}
 .shoes3{width: 70%;}
@@ -653,6 +699,8 @@ top: -15px;
  .fur{display: grid;grid-template-columns: 5 ,1fr;grid-gap: 0rem;max-width: 250%;min-width:80% ;}  
 }
 
+ 
+ 
 
 
 
@@ -664,7 +712,7 @@ top: -15px;
 
 
 
-
+ 
 
 
     
@@ -673,4 +721,4 @@ top: -15px;
 
 
 
-
+ 
